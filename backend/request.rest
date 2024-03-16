@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE1LCJuYW1lIjoiaXphbiIsImVtYWlsIjoiaUBnLmNvbSIsImlhdCI6MTcxMDE1MzMwMywiZXhwIjoxNzEwMTUzMzE4fQ.4RGPDmuq2_wUIiTMiqq0Fr58gzzWa3nSjBIqMaSnTOA
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Fazri Muhammad Nizam",
+    "email": "em@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+    POST http://localhost:5000/login
+    Content-Type: application/json
+
+    {
+        "email": "i@g.com",
+        "password": "12345"
+    }
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
